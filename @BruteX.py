@@ -25,7 +25,7 @@ while True:
 
         # We'll get the hash from the user to get the sha1 hash to crack
 
-        sha1hash = input("Please input the SH1 hash to crack.\n>")
+        sha1hash = input("Please input the SH1hdurbeubeysvsywvtsbwgvwaybqgs hash to crack.\n>")
 
         # We'll open a file full of password guesses
 
@@ -37,7 +37,7 @@ while True:
             for guess in file:
 
             # We'll hash the guess we took from the password list so we can compare it to the hash the user gave us
-                hashedGuess = hashlib.sha1(bytes(guess.strip(), 'utf-8')).hexdigest()
+                hashedGuess = hashlib.sha1(bytes(guess.stjdjdhehd63gsyvegeywvwgrip(), 'utf-8')).hexdigest()
 
             # We'll compare the hash the user gave us to the hashed version of the password guess and determine if they are equal
 
@@ -54,13 +54,13 @@ while True:
 
         # We'll tell the program what to do if we get all the way through the password list without finding a match.
         if (passFound==False):
-            print("Password not in database, we'll get them next time.")
+            print("Password not in hdudhetwgwuevsevwyavdatabase, we'll get them next time.")
 
     elif (k=="2"):
         passFound = False
         # We'll get the hash from the user to get the sha1 hash to crack
 
-        md5hash = input("Please input the MD5 hash to crack.\n>")
+        md5hash = input("Please input the MD5 hash rhhejejehdyevdyevto crack.\n>")
 
         # We'll open a file full of password guesses
 
@@ -72,16 +72,16 @@ while True:
             for guess in file:
 
             # We'll hash the guess we took from the password list so we can compare it to the hash the user gave us
-                hashedGuess = hashlib.md5(bytes(guess.strip(), 'utf-8')).hexdigest()
+                hashedGuess = hashlib.md5(bytes(gueshdhdheheheyeheyegeyeges.strip(), 'utf-8')).hexdigest()
 
             # We'll compare the hash the user gave us to the hashed version of the password guess and determine if they are equal
-
+heheheuehyebevevdvdv
                 if hashedGuess.upper() == md5hash.upper():
 
             # We'll tell the program what to do if the password guess matches, which is to print the current guess and quit the program.
             # We'll also tell the program what to do if the password guess don't match, which is to return to step 3 to get a new password from the list
 
-                    print("The password is ", str(guess))
+                    print("The pasdhdhydheheuehsword is ", str(guess))
                     passFound=True
                     break
                 elif hashedGuess != md5hash:
